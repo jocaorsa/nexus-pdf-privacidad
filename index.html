@@ -31,27 +31,37 @@ Nexus PDF no sube tus archivos a ningún servidor, ni nuestro ni de terceros.</p
 contactos. No incluye publicidad, ni herramientas de analítica, ni de seguimiento, ni informes de fallos
 que se envíen automáticamente.</p>
 
-<h2>3. Permisos y acceso a archivos</h2>
+<h2>3. Conexiones opcionales al firmar con certificado</h2>
+<p>Solo hay dos funciones que se conectan a internet, y únicamente cuando tú las activas o las pides:</p>
+<ul>
+  <li><strong>Sello de tiempo</strong> (desactivado por defecto): al firmar, se envía a la autoridad de sellado que
+  elijas (por defecto, DigiCert) un resumen criptográfico (hash) del documento, nunca el documento ni su contenido.</li>
+  <li><strong>Comprobar si un certificado está revocado</strong>: al verificar una firma, se consulta a la autoridad
+  que emitió el certificado (OCSP) con el número de serie de ese certificado.</li>
+</ul>
+<p>Estas consultas van directamente a esas autoridades, no a nosotros, y se rigen por sus propias políticas.</p>
+
+<h2>4. Permisos y acceso a archivos</h2>
 <p>Nexus PDF solo accede a los archivos que tú eliges mediante el selector de archivos del sistema, y solo
 para abrirlos o guardarlos donde tú indiques. Las copias de recuperación que crea la aplicación para no
 perder tu trabajo se guardan en el almacenamiento privado de la aplicación en tu dispositivo y se eliminan al
 desinstalarla.</p>
 
-<h2>4. Compras</h2>
+<h2>5. Compras</h2>
 <p>La compra de la aplicación la gestiona Google Play. Nexus PDF no recibe ni almacena tus datos de pago.
 El tratamiento de esos datos se rige por la
 <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p>
 
-<h2>5. Menores</h2>
+<h2>6. Menores</h2>
 <p>La aplicación no está dirigida a menores de 13 años y no recopila datos de ningún usuario,
 tampoco de menores.</p>
 
-<h2>6. Cambios en esta política</h2>
+<h2>7. Cambios en esta política</h2>
 <p>Si en el futuro se añade alguna función que implique el envío de datos (por ejemplo, una conexión con
 servicios en la nube que tú actives), esta política se actualizará antes de publicar esa versión y la
 función solo actuará cuando tú la uses.</p>
 
-<h2>7. Contacto</h2>
+<h2>8. Contacto</h2>
 <p>Para cualquier pregunta sobre esta política: <a href="mailto:josecaorsa@gmail.com">josecaorsa@gmail.com</a></p>
 
 <hr>
@@ -61,7 +71,7 @@ función solo actuará cuando tú la uses.</p>
 <div lang="en">
 <p><strong>Nexus PDF does not collect, transmit or share any personal data.</strong></p>
 <p>All documents you open, edit, sign or convert are processed only on your device and are never uploaded to
-any server. The app contains no ads, analytics, tracking or automatic crash reporting. It only accesses the
+any server. Only two optional features connect to the internet, and only when you use them: a signature timestamp (off by default; sends a hash of the document, never its content, to the timestamp authority you choose) and certificate revocation checks (OCSP, sends the certificate serial number to its issuer). The app contains no ads, analytics, tracking or automatic crash reporting. It only accesses the
 files you choose through the system file picker. Recovery copies are kept in the app's private storage on your
 device and are removed when the app is uninstalled. Purchases are handled by Google Play; Nexus PDF never
 receives your payment details. The app is not directed at children under 13. If a future feature requires
